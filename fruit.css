@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right,yellow, orangered);
+}
+
+.wrapper {
+    max-width: 400px;
+    margin: 150px auto;
+}
+
+.wrapper .search-container {
+    background: #fff;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    top: 350px;
+    box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+    opacity: .5;
+}
+
+.search-container input {
+    height: 55px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0 60px 0 20px;
+    font-size: 22px;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+}
+
+.search-container .suggestions {
+    padding: 0;
+    max-height: 280px;
+    overflow-y: auto;
+    cursor: default;
+}
+
+.suggestions li {
+    list-style: none;
+    font-size: 22px;
+    padding: 8px 12px;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.suggestions li:hover {
+    background: #efefef;
+    font-weight: bold;
+}
